@@ -10,14 +10,16 @@ public class MetGala {
         System.out.println("you are: " + name);
         boolean check = false;
 
-        for (int i = 0; i < guests.length ; i++) {
-            if (name.equals(guests[i])) {
+        for (String guest : guests) {
+            if (name.equals(guest)) {
                 check = true;
-            };
+                break;
+            }
+
 
         }
 
-        if (check == true) {
+        if (check) {
             System.out.println("you are welcome");
         }else{
             System.out.println("you are not welcome");
