@@ -4,7 +4,7 @@ package org.exercise;
 
 public class IndexLenght {
     public static void main(String[] args) {
-        String string = "aaaahahahaaahahaaahahaa";
+        String string = "abcdefa";
         char letter= 'a';
         int chain = 0;
         int maxChain = 0;
@@ -14,7 +14,7 @@ public class IndexLenght {
 
             if (string.charAt(i) ==letter) {
                 chain= chain + 1;
-                if (chain > maxChain){
+                if (chain >= maxChain){
                     maxChain = chain;
                     indexof = i+1 - maxChain;
                 }
