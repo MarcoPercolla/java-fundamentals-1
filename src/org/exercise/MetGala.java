@@ -24,5 +24,6 @@ public class MetGala {
         }else{
             System.out.println("you are not welcome");
         }
+        scanner.close();
     }
 }
